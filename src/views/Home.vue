@@ -19,11 +19,14 @@ export default {
   components: {
     HelloWorld
   },
-  mounted() {
+  methods: {
     aa() {
-      let a = Math.round();
+      const a = Math.round();
       this.$data.num = a;
     }
+  },
+  mounted() {
+    // TODO
   }
 };
 </script>
