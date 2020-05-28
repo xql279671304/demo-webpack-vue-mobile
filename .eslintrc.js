@@ -92,16 +92,6 @@ module.exports = {
     'no-extra-boolean-cast': [2], // 禁止不必要的布尔转换
     'no-extra-semi': [1], // 禁止不必要的分号
     'no-func-assign': [2], // 禁止对 function 声明重新赋值
-    'no-extra-parens': [
-      'all',
-      {
-        'conditionalAssign': false,
-        'returnAssign': false,
-        'nestedBinaryExpressions': false,
-        'ignoreJSX': 'none|all|multi-line|single-line',
-        'enforceForArrowConditionals': false
-      }
-    ], // 禁止不必要的括号
     'no-inner-declarations': [2], // 禁止在嵌套的块中出现变量声明或 function 声明
     'no-invalid-regexp': [2], // 禁止 RegExp 构造函数中存在无效的正则表达式字符串
     'no-irregular-whitespace': [2], // 禁止不规则的空白
@@ -116,7 +106,7 @@ module.exports = {
     'use-isnan': [2], // 要求使用 isNaN() 检查 NaN
     'valid-typeof': [2], // 强制 typeof 表达式与有效的字符串进行比较
     'class-methods-use-this': [2], // 强制类方法使用 this
-    'complexity': [2, { max: 3 } ], // 指定程序中允许的最大环路复杂度
+    'complexity': [2, { max: 25 } ], // 指定程序中允许的最大环路复杂度
     'consistent-return': [1], // 要求 return 语句要么总是指定返回的值，要么不指定
     'dot-location': [2], // 强制在点号之前和之后一致的换行
     'eqeqeq': [2, 'always'], // 要求使用 === 和 !==
